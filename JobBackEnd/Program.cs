@@ -1,8 +1,14 @@
+using JobBackEnd;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+IConfiguration configuration = new ConfigurationBuilder()
+.AddJsonFile("appsettings.json")
+.AddEnvironmentVariables()
+.Build();
 
 builder.Services.AddControllers();
+builder.Services.AddDependencies(configuration);
 
 var app = builder.Build();
 
