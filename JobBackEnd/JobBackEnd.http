@@ -1,6 +1,23 @@
-@JobBackEnd_HostAddress = http://localhost:5063
+@JobBackEnd_HostAddress = http://localhost:23581 
+//5063
 
-GET {{JobBackEnd_HostAddress}}/weatherforecast/
+GET {{JobBackEnd_HostAddress}}/candidate
 Accept: application/json
-
 ###
+
+POST {{JobBackEnd_HostAddress}}/candidate/
+Accept: application/json,
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "phoneNumber": "123-456-7890",
+  "email": "john.doe@example.com",
+  "calltimeinterval": "9 AM - 5 PM",
+  "linkedInProfileUrl": "https://linkedin.com/in/johndoe",
+  "githubProfileUrl": "https://github.com/johndoe",
+  "comment": "Looking forward to the opportunity."
+}
+###
+
