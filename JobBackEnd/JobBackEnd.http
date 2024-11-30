@@ -14,7 +14,7 @@ Content-Type: application/json
   "lastName": "Doe",
   "phoneNumber": "123-456-7890",
   "email": "john.doe@example.com",
-  "calltimeinterval": "9 AM - 5 PM",
+  "calltimeinterval": "9:00 AM - 1:00 PM",
   "linkedInProfileUrl": "https://linkedin.com/in/johndoe",
   "githubProfileUrl": "https://github.com/johndoe",
   "comment": "Looking forward to the opportunity."

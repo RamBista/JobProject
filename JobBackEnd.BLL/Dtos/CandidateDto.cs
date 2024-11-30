@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using JobBackEnd.BLL.Attributes;
+using System.ComponentModel.DataAnnotations;
 namespace JobBackEnd.BLL.Dtos;
 
 public class CandidateDto
@@ -21,6 +22,7 @@ public class CandidateDto
     public string Email { get; set; } = default!;
 
     [MaxLength(100)]
+    [TimeInterval]
     public string? CallTimeInterval { get; set; } = default!;
 
     [Url]
