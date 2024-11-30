@@ -4,9 +4,9 @@ This is a .NET 8 Web API for managing candidates. It include an endpoints for ad
 
 # Prerequisites
 
-.NET 8 SDK  
-Visual Studio 2022  
-SQL Server (optional)
+1. .NET 8 SDK  
+2. Visual Studio 2022  
+3. SQL Server (optional)
 
 
 # Getting Started
@@ -36,13 +36,13 @@ SQL Server (optional)
    2.3  JobBackEnd.BLL.Attributes.UnitTest: Unit test to verify custom attribute added from time interval.
 
 # Note  
-   Two repositories like SQL or Mango can be used as per need.
-   InmemoryDatabase has been used for now. Please go to AddDependencies file to verfiy.
-   For SQL connection, please update connection string in appsetting.json file.  
+   Two repositories like SQL or Mango can be used as per need.   
+   InmemoryDatabase has been used for now. Please go to AddDependencies file to verfiy.   
+   For SQL connection, please update connection string in appsetting.json file.     
 
 # To do
-   Data migration is required if we go for code first approach.
-   Database and tables are required if we go for database first approach.
+   Data migration is required if we go for code first approach.   
+   Database and tables are required if we go for database first approach.   
 
    
 
